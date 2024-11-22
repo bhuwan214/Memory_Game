@@ -1,4 +1,9 @@
-
+import FetchPokemons from "./FetchPokemon"
 export default function App() {
- console.log("hi")
+  
+  const { pokemons, getRandomPokemons, shufflePokemons, setPokemons}=FetchPokemons()
+console.log(pokemons)
+
+
+
 }
