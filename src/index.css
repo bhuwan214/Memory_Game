@@ -21,3 +21,22 @@ body {
   justify-content: center;
   
 }
+
+
+button{
+  width:8rem;
+  height:3rem;
+  margin: 20px;
+  border-radius:10px;
+  border: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(245, 201, 160);
+}
+
+h1{
+  text-align: center;
+  margin-bottom:40px;
+  font-size: 3rem;
+}
