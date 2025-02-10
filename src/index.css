@@ -12,16 +12,24 @@
 
 
 body {
-  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.levelModal{
+  height: 100vh;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-repeat: no-repeat;
+  flex-direction: column;
+  margin: 0;
   justify-content: center;
+  align-items: center;
+  gap: 40px;
   
 }
 
+.btn{
+  display: flex;
+}
 
 button{
   width:8rem;
@@ -29,7 +37,7 @@ button{
   margin: 20px;
   border-radius:10px;
   border: none;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Potta One, sans-serif;
   font-weight: bold;
   font-size: 20px;
   background-color: rgb(245, 201, 160);
@@ -37,6 +45,24 @@ button{
 
 h1{
   text-align: center;
-  margin-bottom:40px;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family:Potta One, sans-serif;
+  font-weight: bold;
+
+}
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(backgroundwallpaper.jpeg);
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.title-image{
+  width: 500px;
+  margin-bottom:30px;
+
 }

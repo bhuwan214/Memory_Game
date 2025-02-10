@@ -1,0 +1,146 @@
+[
+  {
+    "name": "ace",
+    "url": "src/assets/characters/ace.jpg",
+    "id": "1",
+    "clicked": false
+  },
+  {
+    "name": "bepo",
+    "url": "src/assets/characters/bepo.jpg",
+    "id": "2",
+    "clicked": false
+  },
+  {
+    "name": "Big Mom",
+    "url": "src/assets/characters/bigmom.jpg",
+    "id": "3",
+    "clicked": false
+  },
+  {
+    "name": "Brook",
+    "url": "src/assets/characters/brook.jpg",
+    "id": "4",
+    "clicked": false
+  },
+  {
+    "name": "Chopper",
+    "url": "src/assets/characters/chopper.jpg",
+    "id": "5",
+    "clicked": false
+  },
+  {
+    "name": "Franky",
+    "url": "src/assets/characters/Franky.jpg",
+    "id": "6",
+    "clicked": false
+  },
+  {
+    "name": "Garp",
+    "url": "src/assets/characters/garp.jpg",
+    "id": "7",
+    "clicked": false
+  },
+  {
+    "name": "Jinbe",
+    "url": "src/assets/characters/jinbe.jpg",
+    "id": "7",
+    "clicked": false
+  },
+  {
+    "name": "Kaido",
+    "url": "src/assets/characters/kaido.jpg",
+    "id": "8",
+    "clicked": false
+  },
+  {
+    "name": "Eusstas Kid",
+    "url": "src/assets/characters/kid.jpg",
+    "id": "9",
+    "clicked": false
+  },
+  {
+    "name": "Killer",
+    "url": "src/assets/characters/killer.jpg",
+    "id": "10",
+    "clicked": false
+  },
+  {
+    "name": "Kizaru",
+    "url": "src/assets/characters/kizaru.jpg",
+    "id": "11",
+    "clicked": false
+  },
+  {
+    "name": "law",
+    "url": "src/assets/characters/law.jpg",
+    "id": "12",
+    "clicked": false
+  },
+  {
+    "name": "Monkey d luffy",
+    "url": "src/assets/characters/luffy.jpg",
+    "id": "13",
+    "clicked": false
+  },
+  {
+    "name": "Nami",
+    "url": "src/assets/characters/nami.jpg",
+    "id": "14",
+    "clicked": false
+  },
+  {
+    "name": "Reyleigh",
+    "url": "src/assets/characters/reyleigh.jpg",
+    "id": "15",
+    "clicked": false
+  },
+  {
+    "name": "Niko Robin",
+    "url": "src/assets/characters/robin.jpg",
+    "id": "16",
+    "clicked": false
+  },
+  {
+    "name": "Gol d Roger",
+    "url": "src/assets/characters/roger.jpg",
+    "id": "17",
+    "clicked": false
+  },
+  {
+    "name": "Sabo",
+    "url": "src/assets/characters/sabo.jpg",
+    "id": "18",
+    "clicked": false
+  },
+  {
+    "name": "Vinsmoke Sanji",
+    "url": "src/assets/characters/sanji.jpg",
+    "id": "19",
+    "clicked": false
+  },
+  {
+    "name": "Shanks",
+    "url": "src/assets/characters/shanks.jpg",
+    "id": "20",
+    "clicked": false
+  },
+  {
+    "name": "Smoker",
+    "url": "src/assets/characters/smoker.jpg",
+    "id": "21",
+    "clicked": false
+  },
+  {
+    "name": "Usopp",
+    "url": "src/assets/characters/usopp.jpg",
+    "id": "22",
+    "clicked": false
+  },
+  {
+    "name": "Zoro",
+    "url": "src/assets/characters/zoro.jpg",
+    "id": "23",
+    "clicked": false
+  }
+]
