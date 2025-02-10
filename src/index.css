@@ -27,9 +27,6 @@ body {
   
 }
 
-.btn{
-  display: flex;
-}
 
 button{
   width:8rem;
@@ -51,6 +48,12 @@ h1{
 
 }
 
+.char-title{
+  text-align: center;
+  font-size: 20px;
+  padding: 3px;
+}
+
 #root{
   width: 100vw;
   height: 100vh;
@@ -64,5 +67,32 @@ h1{
 .title-image{
   width: 500px;
   margin-bottom:30px;
+
+}
+
+.charImage{
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  
+}
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 220px;
+  height: 310px;
+  background-color: #1A237E;
+  border-radius: 20px;
+  color:  #FFD700;
+}
+
+.image-group{
+  display: grid;
+  grid-template-columns: repeat(3,250px);
+  gap: 20px;
 
 }

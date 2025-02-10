@@ -4,16 +4,17 @@ export default function FetchCharacters() {
 console.log(data)
 
 return(
-    data.map(curchar=>{
+    <div className="image-group">
+   { data.map(curchar =>{
         return(
-            <div  key={curchar.id} >
-                 <img src={curchar.url} alt="" />
-                 <h2>{curchar.name}</h2>
-                 
-           </div>
-           
+            <div className="image-container" key={curchar.id} >
+                 <img src={curchar.url} alt="character image" className="charImage" />
+                 <h2 className="char-title">{curchar.name}</h2>
+           </div> 
         )
     })
-   
+    }
+    
+   </div>
 )
 }
