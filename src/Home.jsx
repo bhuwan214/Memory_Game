@@ -27,12 +27,9 @@ export default function Home({ setdifficulty }) {
           <button onClick={() => handleClick(2)}>Medium</button>
           <button onClick={() => handleClick(3)}>Hard</button>
         </div>
-        {selection && (
-          <p>
-            Selected Difficulty: <strong>{selection.difficulty}</strong> (Index: {selection.index})
-          </p>
-        )}
       </div>
+    
+
     </>
   );
 }

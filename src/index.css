@@ -76,7 +76,7 @@ h1{
   
 }
 
-.image-container{
+.image-container,.card-back{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -85,7 +85,18 @@ h1{
   height: 310px;
   background-color: #1A237E;
   border-radius: 20px;
-  color:  #FFD700;
+}
+
+.back-inner{
+  width: 200px;
+  height: 290px;
+  border: solid 2px #F4BC23;
+  border-radius:20px;
+  padding-bottom:20px ;
+  background-image: url(/public/download.png);
+  background-position: center;
+  background-size: contain;
+background-repeat: no-repeat;
 }
 
 .image-group{
@@ -95,4 +106,8 @@ h1{
   gap: 20px;
   padding-top:40px;
 
+}
+
+.tilt{
+  width:220px;
 }
