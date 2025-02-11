@@ -1,12 +1,10 @@
+import FetchCharacters from "./FetchCharacters"
 
-export default function Game({level}) {
-    console.log("this is game page difficulity level is", level )
-
+export default function Game({level,index}) {
     return (
    <>
-   
-   <h1>This is game page</h1>
-   
+     <h1>Difficulity {level}</h1>
+      <FetchCharacters level={level} index={index} />
    </>
   )
 }

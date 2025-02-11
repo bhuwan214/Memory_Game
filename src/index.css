@@ -60,8 +60,6 @@ h1{
   background-image: url(backgroundwallpaper.jpeg);
   background-position: center;
   background-size: cover;
-
-
 }
 
 .title-image{
@@ -92,7 +90,9 @@ h1{
 
 .image-group{
   display: grid;
-  grid-template-columns: repeat(3,250px);
+  justify-content: center;
+  grid-template-columns: repeat(5,250px);
   gap: 20px;
+  padding-top:40px;
 
 }

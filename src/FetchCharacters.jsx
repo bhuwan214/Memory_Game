@@ -1,20 +1,38 @@
-import data from  "./data.json"
+import { useState, useEffect } from "react";
+import data from "./data.json";
 
-export default function FetchCharacters() {
-console.log(data)
+export default function FetchCharacters({ level, index }) {
+  const [characters, setCharacters] = useState([]);
 
-return(
+  // Function to get `index` random images
+  const getRandomCharacters = () => {
+    return [...data]
+      .sort(() => Math.random() - 0.5) // Shuffle array
+      .slice(0, index); // Pick `index` items
+  };
+
+  // Load random images when component mounts or `index` changes
+  useEffect(() => {
+    setCharacters(getRandomCharacters());
+  }, [index]); // Re-run when `index` updates
+
+  // Shuffle only the selected images
+  const shuffleImages = () => {
+    setCharacters((prev) => [...prev].sort(() => Math.random() - 0.5));
+  };
+
+  return (
     <div className="image-group">
-   { data.map(curchar =>{
-        return(
-            <div className="image-container" key={curchar.id} >
-                 <img src={curchar.url} alt="character image" className="charImage" />
-                 <h2 className="char-title">{curchar.name}</h2>
-           </div> 
-        )
-    })
-    }
-    
-   </div>
-)
+      {characters.map((curchar) => (
+        <div
+          className="image-container"
+          key={curchar.id}
+          onClick={shuffleImages} // Shuffle when any image is clicked
+        >
+          <img src={curchar.url} alt={curchar.name} className="charImage" />
+          <h2 className="char-title">{curchar.name}</h2>
+        </div>
+      ))}
+    </div>
+  );
 }

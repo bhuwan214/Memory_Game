@@ -1,12 +1,12 @@
 [
   {
-    "name": "ace",
+    "name": "Ace",
     "url": "src/assets/characters/ace.jpg",
     "id": "1",
     "clicked": false
   },
   {
-    "name": "bepo",
+    "name": "Bepo",
     "url": "src/assets/characters/bepo.jpg",
     "id": "2",
     "clicked": false
@@ -54,7 +54,7 @@
     "clicked": false
   },
   {
-    "name": "Eusstas Kid",
+    "name": "Kid",
     "url": "src/assets/characters/kid.jpg",
     "id": "9",
     "clicked": false
@@ -78,7 +78,7 @@
     "clicked": false
   },
   {
-    "name": "Monkey d luffy",
+    "name": "luffy",
     "url": "src/assets/characters/luffy.jpg",
     "id": "13",
     "clicked": false
@@ -96,13 +96,13 @@
     "clicked": false
   },
   {
-    "name": "Niko Robin",
+    "name": "Robin",
     "url": "src/assets/characters/robin.jpg",
     "id": "16",
     "clicked": false
   },
   {
-    "name": "Gol d Roger",
+    "name": "Roger",
     "url": "src/assets/characters/roger.jpg",
     "id": "17",
     "clicked": false
@@ -114,7 +114,7 @@
     "clicked": false
   },
   {
-    "name": "Vinsmoke Sanji",
+    "name": "Sanji",
     "url": "src/assets/characters/sanji.jpg",
     "id": "19",
     "clicked": false
