@@ -14,6 +14,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  /* overflow: hidden; */
 }
 
 .levelModal{
@@ -55,11 +56,12 @@ h1{
 }
 
 #root{
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   background-image: url(backgroundwallpaper.jpeg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .title-image{
@@ -81,15 +83,15 @@ h1{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 220px;
-  height: 310px;
+  width: 200px;
+  height: 280px;
   background-color: #1A237E;
   border-radius: 20px;
 }
 
 .back-inner{
-  width: 200px;
-  height: 290px;
+  width: 185px;
+  height: 270px;
   border: solid 2px #F4BC23;
   border-radius:20px;
   padding-bottom:20px ;
@@ -109,5 +111,6 @@ background-repeat: no-repeat;
 }
 
 .tilt{
-  width:220px;
+  width:200px;
+  
 }
