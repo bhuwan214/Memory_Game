@@ -4,27 +4,45 @@ import Tilt from "react-parallax-tilt";
 import "./styles.css"; // Ensure CSS is included for animations
 
 export default function FetchCharacters({ level, index }) {
-  const [characters, setCharacters] = useState([]);
-  const [flippedCards, setFlippedCards] = useState({}); // Track flipped state per card
 
-  // Function to get unique `index` random images
+  const [characters, setCharacters] = useState([]);
+  const [flipped, setFlipped] = useState(false);
+  const [clickedCard,setClickedCard]=useState([])
+
+  // Function to get `index` unique random images
   const getRandomCharacters = () => {
     const shuffled = [...data].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, index);
   };
 
-  // Load random unique images when component mounts
+  // Load random images when component mounts
   useEffect(() => {
     setCharacters(getRandomCharacters());
-  }, [index]); // Re-run when `index` updates
+  }, [index]);
 
-  // Handle flipping individual cards
-  const handleCardClick = (id) => {
-    setFlippedCards((prev) => ({
-      ...prev,
-      [id]: !prev[id], // Toggle flip state for clicked card
-    }));
+  // Handle clicking any card: Flip all cards, then shuffle, then flip back
+  const handleCardClick = (card) => {
+    
+    SelectedCard(card);
+
+    setFlipped(true);
+
+    setTimeout(() => {
+      setCharacters((prev) => [...prev].sort(() => Math.random() - 0.5));
+    }, 600); 
+
+    setTimeout(() => {
+      setFlipped(false); 
+    }, 1200); 
   };
+
+  const SelectedCard =(card)=>{
+setClickedCard([...clickedCard, card])
+  }
+
+  console.log(clickedCard)
+
+
 
   return (
     <div className="image-group">
@@ -40,8 +58,8 @@ export default function FetchCharacters({ level, index }) {
           className="tilt"
         >
           <div
-            className={`card ${flippedCards[curchar.id] ? "flipped" : ""}`}
-            onClick={() => handleCardClick(curchar.id)} // Flip only clicked card
+            className={`card ${flipped ? "flipped" : ""}`}
+            onClick={()=>handleCardClick(curchar.id)}
           >
             <div className="card-inner">
               <div className="card-front">
