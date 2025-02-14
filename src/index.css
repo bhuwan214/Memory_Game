@@ -58,7 +58,7 @@ h1{
 #root{
   width: 100vw;
 
-  background-image: url(backgroundwallpaper.jpeg);
+  background-image: url(https://github.com/bhuwan214/Memory_Game/blob/main/public/backgroundwallpaper.jpeg?raw=true);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -95,7 +95,7 @@ h1{
   border: solid 2px #F4BC23;
   border-radius:20px;
   padding-bottom:20px ;
-  background-image: url(/public/download.png);
+  background-image: url(/download.png);
   background-position: center;
   background-size: contain;
 background-repeat: no-repeat;
