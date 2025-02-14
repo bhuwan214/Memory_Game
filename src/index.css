@@ -14,7 +14,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow-x:hidden ;
 }
 
 .levelModal{
@@ -56,8 +56,8 @@ h1{
 }
 
 #root{
-  /* width: 100vw;
-  height: 100vh; */
+  width: 100vw;
+
   background-image: url(backgroundwallpaper.jpeg);
   background-position: center;
   background-size: cover;
