@@ -1,18 +1,11 @@
 import { useState, useEffect } from "react";
 import data from "./data.json";
-import Tilt from "react-parallax-tilt";
-import "./styles.css"; // Ensure CSS is included for animations and popups
+import {ClickedCardCount,FetchCards} from "./FetchCards"
 
-// Component to display the clicked card count
-function ClickedCardCount({ clickedCount, totalCards }) {
-  return (
-    <div className="clicked-card-count">
-      <h3>Progress: {clickedCount} / {totalCards}</h3>
-    </div>
-  );
-}
 
-export default function FetchCharacters({ level, index }) {
+
+
+export default function GameFunctions({ level, index }) {
   const [characters, setCharacters] = useState([]);
   const [flipped, setFlipped] = useState(false); // Global flip state
   const [clickedCards, setClickedCards] = useState([]); // Array of clicked card IDs
@@ -27,8 +20,8 @@ export default function FetchCharacters({ level, index }) {
   // Load random unique images when component mounts or 'index' changes
   useEffect(() => {
     setCharacters(getRandomCharacters());
-    setClickedCards([]);      // Reset clicked cards when new set is loaded
-    setGameStatus("playing"); // Reset game status
+    setClickedCards([]);  
+    setGameStatus("playing"); 
     setFlipped(false);
   }, [index]);
 
@@ -46,18 +39,18 @@ export default function FetchCharacters({ level, index }) {
       const newClicked = [...clickedCards, id];
       setClickedCards(newClicked);
 
+      
+
       // If all cards are clicked uniquely, player wins
       if (newClicked.length === characters.length) {
         setGameStatus("win");
-        setFlipped(true); // Optionally flip all cards
+        setFlipped(true); 
         return;
       }
     }
-
-    // Proceed with flipping all cards and shuffling:
+    
     setFlipped(true);
 
-    // After flip animation completes, shuffle cards
     setTimeout(() => {
       setCharacters((prev) => [...prev].sort(() => Math.random() - 0.5));
     }, 600); // This delay should match your CSS transition time
@@ -93,42 +86,9 @@ export default function FetchCharacters({ level, index }) {
       )}
 
       <ClickedCardCount clickedCount={clickedCards.length} totalCards={characters.length} />
+      <FetchCards handleCardClick ={handleCardClick} flipped={flipped} characters ={characters}/>
 
-      <div className="image-group">
-        {characters.map((curchar) => (
-          <Tilt
-            key={curchar.id}
-            glareEnable={true}
-            glareMaxOpacity={0.6}
-            glareColor="#ffffff"
-            glarePosition="bottom"
-            glareBorderRadius="20px"
-            gyroscope={true}
-            className="tilt"
-          >
-            <div
-              className={`card ${flipped ? "flipped" : ""}`}
-              onClick={() => handleCardClick(curchar.id)}
-            >
-              <div className="card-inner">
-                <div className="card-front">
-                  <img
-                    src={curchar.url}
-                    alt={curchar.name}
-                    className="charImage"
-                  />
-                  <h2 className="char-title">{curchar.name}</h2>
-                </div>
-                <div className="card-back">
-                  <div className="back-inner"></div>
-                </div>
-              </div>
-            </div>
-          </Tilt>
-        ))}
-      </div>
-
-      {/* Display clicked card count */}
+  
     </div>
   );
 }
