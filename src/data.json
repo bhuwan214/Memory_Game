@@ -44,103 +44,103 @@
   {
     "name": "Jinbe",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/jinbe.png",
-    "id": "7",
+    "id": "8",
     "clicked": false
   },
   {
     "name": "Kaido",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/kaido.png",
-    "id": "8",
+    "id": "9",
     "clicked": false
   },
   {
     "name": "Kid",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/kid.png",
-    "id": "9",
+    "id": "10",
     "clicked": false
   },
   {
     "name": "Killer",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/killer.png",
-    "id": "10",
+    "id": "11",
     "clicked": false
   },
   {
     "name": "Kizaru",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/kizaru.png",
-    "id": "11",
+    "id": "12",
     "clicked": false
   },
   {
     "name": "law",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/law.png",
-    "id": "12",
+    "id": "13",
     "clicked": false
   },
   {
     "name": "luffy",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/luffy.png",
-    "id": "13",
+    "id": "14",
     "clicked": false
   },
   {
     "name": "Nami",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/nami.png",
-    "id": "14",
+    "id": "15",
     "clicked": false
   },
   {
     "name": "Reyleigh",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/reyleigh.png",
-    "id": "15",
+    "id": "16",
     "clicked": false
   },
   {
     "name": "Robin",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/robin.png",
-    "id": "16",
+    "id": "17",
     "clicked": false
   },
   {
     "name": "Roger",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/roger.png",
-    "id": "17",
+    "id": "18",
     "clicked": false
   },
   {
     "name": "Sabo",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/sabo.png",
-    "id": "18",
+    "id": "19",
     "clicked": false
   },
   {
     "name": "Sanji",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/sanji.png",
-    "id": "19",
+    "id": "20",
     "clicked": false
   },
   {
     "name": "Shanks",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/shanks.png",
-    "id": "20",
+    "id": "21",
     "clicked": false
   },
   {
     "name": "Smoker",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/smoker.png",
-    "id": "21",
+    "id": "22",
     "clicked": false
   },
   {
     "name": "Usopp",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/usopp.png",
-    "id": "22",
+    "id": "23",
     "clicked": false
   },
   {
     "name": "Zoro",
     "url": "https://raw.githubusercontent.com/bhuwan214/Memory_Game/refs/heads/main/src/assets/characters/zoro.png",
-    "id": "23",
+    "id": "24",
     "clicked": false
   }
 ]

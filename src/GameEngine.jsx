@@ -70,7 +70,7 @@ export default function GameFunctions({ level, index }) {
   };
 
   return (
-    <div>
+    <div className="container">
       {/* Display popup messages for game over or win */}
       {gameStatus === "gameOver" && (
         <div className="popup game-over">

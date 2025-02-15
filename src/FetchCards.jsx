@@ -1,6 +1,4 @@
 import Tilt from "react-parallax-tilt";
-import Uniqid from "uniqid"
-import "./styles.css"; 
 
     
  export const ClickedCardCount=({ clickedCount, totalCards }) =>{
