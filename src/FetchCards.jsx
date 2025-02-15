@@ -11,6 +11,9 @@ import Tilt from "react-parallax-tilt";
 
 
  export const FetchCards =({characters,flipped,handleCardClick})=>{
+
+
+  
     return(
       <div className="image-group">
       {characters.map((curchar) => (
